@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:baselineAligned="false"
+    tools:context="com.diego.multipanefragment.MainActivity">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="com.diego.multipanefragment.MainPanelFragment"
+
+        tools:layout="@layout/fragment_main_panel">    </fragment>
+        <fragment
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/side_panel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            class="com.diego.multipanefragment.SidePanelFragment"
+
+            tools:layout="@layout/fragment_side_panel"></fragment>
+
+
+
+</RelativeLayout>
